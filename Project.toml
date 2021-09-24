@@ -7,3 +7,5 @@ PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
 VTKDataIO = "c6703add-1d23-52c6-9943-3ad88652b9b2"
 VTKDataTypes = "10d27dd1-1d0f-5a4c-b178-bd2d0045a217"
 
+[compat]
+PyCall = "1"
