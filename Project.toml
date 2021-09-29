@@ -1,9 +1,17 @@
 [deps]
 Dash = "1b08a953-4be3-4667-9a23-3db579824955"
 DashBase = "03207cf0-e2b3-4b91-9ca8-690cf0fb507e"
+DashBootstrapComponents = "1b08a953-4be3-4667-9a23-fa6d05876a1e"
+DashCoreComponents = "1b08a953-4be3-4667-9a23-9da06441d987"
 DashHtmlComponents = "1b08a953-4be3-4667-9a23-24100242a84a"
 DashVtk = "1b08a953-4be3-4667-9a23-818b1eccd4c7"
+Ferrite = "c061ca5d-56c9-439f-9c0e-210fe06d3992"
+GeometryBasics = "5c1252a2-5f33-56bf-86c9-59e7332b4326"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Makie = "ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a"
 PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
+StatsFuns = "4c63d2b9-4356-54db-8cca-17b64c39e42c"
+TopOpt = "53a1e1a5-51bb-58a9-8a02-02056cc81109"
+TopOptMakie = "e9c7d871-bed6-4650-ae23-a24e464b8b55"
 VTKDataIO = "c6703add-1d23-52c6-9943-3ad88652b9b2"
 VTKDataTypes = "10d27dd1-1d0f-5a4c-b178-bd2d0045a217"
-
