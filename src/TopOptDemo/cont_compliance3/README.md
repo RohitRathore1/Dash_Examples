@@ -1,6 +1,3 @@
-## Demo of COnt Compliance 1D 
+## Demo of Cont Compliance3 
 
-![A demo of the usage DashVtk-TopOPt.jl app]
-
-<video src="./demo.mp4" controls="controls" style="max-width: 730px;">
-</video>
+![A demo of Cont Compliance3](demo.gif)
