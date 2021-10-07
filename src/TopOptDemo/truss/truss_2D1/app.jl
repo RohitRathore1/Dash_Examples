@@ -5,6 +5,7 @@ using VTKDataIO
 using PyCall
 using VTKDataTypes
 using DashVtk
+
 using Dash
 using DashHtmlComponents
 
@@ -58,13 +59,16 @@ TopOpt.setpenalty!(solver, p)
 
 topology = r.minimizer;
 
-mesh = VTKUnstructuredData(problem)
-topology = round.(topology)
-inds = findall(isequal(0), topology)
-deleteat!(mesh.cell_connectivity, inds)
-deleteat!(mesh.cell_types, inds)
+function fg(topology, problem)
+    mesh = VTKUnstructuredData(problem)
+    topology = round.(topology)
+    inds = findall(isequal(0), topology)
+    deleteat!(mesh.cell_connectivity, inds)
+    deleteat!(mesh.cell_types, inds)
+    return mesh
+end
 
-pymesh = PyVTK(mesh)
+pymesh = PyVTK(fg(topology, problem))
 dash_vtk_utils = pyimport("dash_vtk.utils")
 dash_vtk_utils.to_mesh_state
 state = dash_vtk_utils.to_mesh_state(pymesh)
